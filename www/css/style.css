@@ -1,1 +1,694 @@
 /* Empty. Add your own CSS if you like */
+.cent {
+	text-align: center;
+}
+h2 {
+	font-size: 60px;
+	color:black;
+}
+.tabla{
+  width: 30px;
+  height: 30px;
+}
+.inf h1{
+  font-family:Bernard MT Condensed;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+.inf{
+  background:url(../img/fondoinfo.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size:cover;
+}
+.nutri{
+  background: url(../img/fondonutri.jpg);
+  background-size: cover;
+  background-position: center;
+  -webkit-background-size:cover;
+}
+.nutri h1{
+  font-family:Bernard MT Condensed;
+  color: #f2f2f2;
+  font-weight: bold;
+}
+
+ion-view {
+	background-image: url(../img/fondo.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.dna {
+  background: black;
+  height: 2px;
+  width: 200px;
+  margin: 30px auto;
+  position: relative;
+  animation: dna-rotate 1.6s infinite linear;
+}
+.dna::after,
+.dna::before {
+  content: '';
+  width: 20px;
+  display: block;
+  height: 20px;
+  background: orange;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: -10px;
+}
+.dna::after {
+  right: 0;
+  margin-right: -9px;
+  animation: buble-right 1.6s linear infinite;
+}
+.dna::before {
+  animation: buble-left 1.6s linear infinite;
+}
+.dna:nth-child(0),
+.dna:nth-child(0):before,
+.dna:nth-child(0):after {
+  animation-delay: 0s;
+}
+.dna:nth-child(1),
+.dna:nth-child(1):before,
+.dna:nth-child(1):after {
+  animation-delay: 0.15s;
+}
+.dna:nth-child(2),
+.dna:nth-child(2):before,
+.dna:nth-child(2):after {
+  animation-delay: 0.3s;
+}
+.dna:nth-child(3),
+.dna:nth-child(3):before,
+.dna:nth-child(3):after {
+  animation-delay: 0.45s;
+}
+.dna:nth-child(4),
+.dna:nth-child(4):before,
+.dna:nth-child(4):after {
+  animation-delay: 0.6s;
+}
+.dna:nth-child(5),
+.dna:nth-child(5):before,
+.dna:nth-child(5):after {
+  animation-delay: 0.75s;
+}
+.dna:nth-child(6),
+.dna:nth-child(6):before,
+.dna:nth-child(6):after {
+  animation-delay: 0.9s;
+}
+.dna:nth-child(7),
+.dna:nth-child(7):before,
+.dna:nth-child(7):after {
+  animation-delay: 1.05s;
+}
+.dna:nth-child(8),
+.dna:nth-child(8):before,
+.dna:nth-child(8):after {
+  animation-delay: 1.2s;
+}
+.dna:nth-child(9),
+.dna:nth-child(9):before,
+.dna:nth-child(9):after {
+  animation-delay: 1.35s;
+}
+.dna:nth-child(10),
+.dna:nth-child(10):before,
+.dna:nth-child(10):after {
+  animation-delay: 1.5s;
+}
+.dna:nth-child(11),
+.dna:nth-child(11):before,
+.dna:nth-child(11):after {
+  animation-delay: 1.65s;
+}
+.dna:nth-child(12),
+.dna:nth-child(12):before,
+.dna:nth-child(12):after {
+  animation-delay: 1.8s;
+}
+.memoria{
+  background: #000000;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-gap: 10px;
+  width: 400px;
+
+}
+
+.carta{
+  background: #BF0000;
+  width: 70px;
+  height: 70px;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: background 1s;
+}
+.carta:hover {
+  background: #790000;
+  cursor: pointer;
+}
+
+.carta.A {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.A::after{
+  content:"A";
+  font-size: 50px;
+}
+.carta.B {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.B::after{
+  content: 'B';
+  font-size: 50px;
+}
+.carta.C {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.C::after{
+  content: 'C';
+  font-size: 50px;
+}
+.carta.D {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.D::after{
+  content: 'D';
+  font-size: 50px;
+}
+.carta.E {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.E::after{
+  content: 'E';
+  font-size: 50px;
+}
+.carta.F {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.F::after{
+  content: 'F';
+  font-size: 50px;
+}
+.carta.G {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.G::after{
+  content: 'G';
+  font-size: 50px;
+}
+.carta.H {
+  background: #00FF35;
+  pointer-events: none;
+}
+.carta.H::after{
+  content: 'H';
+  font-size: 50px;
+}
+.carta.A.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.B.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.C.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.D.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.E.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.F.par {
+  background: #00871C;
+  pointer-events: none;
+}
+
+.carta.G.par {
+ background: #00871C;
+ pointer-events: none;
+}
+
+.carta.H.par {
+  background: #00871C;
+  pointer-events: none;
+}
+@-moz-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: #2196f3;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-webkit-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: #2196f3;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-o-keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: #2196f3;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@keyframes dna-rotate {
+  0% {
+    width: 200px;
+  }
+  25% {
+    width: 0;
+  }
+  50% {
+    width: 200px;
+  }
+  75% {
+    width: 0;
+    background: #2196f3;
+  }
+  100% {
+    width: 200px;
+  }
+}
+@-moz-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-webkit-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-o-keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes buble-right {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1) translateX(-200px);
+  }
+  75% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-moz-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-webkit-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@-o-keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+@keyframes buble-left {
+  0% {
+    transform: scale(1) translateX(0px);
+  }
+  25% {
+    transform: scale(0.5);
+    background: #0effdb;
+  }
+  50% {
+    transform: scale(1) translateX(200px);
+  }
+  75% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1) translateX(0px);
+  }
+}
+}
+.nutrifacts-html {
+  padding: 2px;
+  font-family:"Helvetica";
+  font-size: 12px;
+  float:center;
+  border: 2px solid black;
+  width:250px;
+  margin-top:2px;
+  background-color: white;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+.nutrifacts-html table{
+  border-collapse: collapse;
+  width: 100%
+}
+.nutrifacts-html td {
+  border-top: 1px solid black;
+}
+.nutrifacts-html h2 {
+  margin:0;
+  font-size:29px; 
+}
+.separator {
+  height:7px;
+  background-color:black;
+  margin-top:2px;
+}
+.alineartexto {
+  text-align:right;
+}
+.alinearcantidad {
+  text-align:right;
+}
+.img {
+  text-align: center;
+  position: center;
+  display: block;
+  margin: auto;
+  height: 30px;
+  width: 30px;
+}
+.text{
+  color: black;
+  text-align: center;
+  font-family:Bauhaus 93;
+  font-size: 18px;
+  background-color: white;
+  opacity: 0.8;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+    width: 300px;
+    min-height: 200px;
+    background: linear-gradient(160deg, green 0%, beige 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 3em;
+    border: dotted; border-color: darkorchid;
+}
+
+.deck .card {
+    height: 50px;
+    width: 50px;
+    background: #E9E638;
+    font-size: 0;
+    color: red;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #2ECBEA;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 20px;
+  
+}
+
+.button:hover{
+  color:blue;
+  background-color: yellow;
+
+}
+
+.deck .card.match {
+    cursor: default;
+    background: blue;
+    font-size: 33px;
+}
+
+.deck .card.inactive{
+    pointer-events: none;
+    background: #38E6E9;
+  
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+    text-align: left;
+    width: 345px;
+    margin-bottom: 10px;
+  }
+
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    color: red;
+
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+
+.score-panel .restart { 
+    float: right;
+    cursor: pointer;
+    color:blue;
+  
+}
+
+# hour,minute,seconds{
+  font-size: 25px;
+  font-family: 'Open Sans', sans-serif;
+  color:blue;
+  background-color: blue;
+  margin: 20% auto;
+  padding-left: 15px;
+  font-weight: bold;
+  float:right;
+  border color:red;
+  
+}
+/*
+div.time{
+  width: 100px;
+  color:aqua;
+  font-size: 50px;
+  padding: .5em 5em;
+  margin: 15px;
+  border-radius: 10px;
+}*/
+/*
+#time{
+  font-size: 60px;
+  font-family: 'Open Sans', sans-serif;
+  color:blue;
+  background-color: yellow;
+  margin:auto;
+  padding-left: 15px;
+}
+/*Styles for Modal as obtained from W3Schools.org*/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: red;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

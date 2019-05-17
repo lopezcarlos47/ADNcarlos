@@ -5,20 +5,29 @@ navigation history that also transitions its views in and out.
 -->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
+  <ion-tab title="INICIO" icon-off="ion-ionic" icon-on="ion-ionic" href="#/tab/inicio">
+    <ion-nav-view name="tab-inicio"></ion-nav-view>
+  </ion-tab>
   <!-- Dashboard Tab -->
-  <ion-tab title="inicio" icon-off="ion-ios-pulse" icon-on="ion-ios-pulse-strong" href="#/tab/dash">
+  <ion-tab title="ADN" icon-off="ion-images" icon-on="ion-images" href="#/tab/dash">
     <ion-nav-view name="tab-dash"></ion-nav-view>
   </ion-tab>
 
   <!-- Chats Tab -->
-  <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
+  <ion-tab title="INFOGRAFIA" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" href="#/tab/chats">
     <ion-nav-view name="tab-chats"></ion-nav-view>
   </ion-tab>
 
   <!-- Account Tab -->
-  <ion-tab title="cuentas" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/account">
+  <ion-tab title="TABLA NUTRICIONAL" icon-off="ion-settings" icon-on="ion-settings" href="#/tab/account">
     <ion-nav-view name="tab-account"></ion-nav-view>
   </ion-tab>
+
+  <ion-tab title="JUEGO" icon-off="ion-ionic" icon-on="ion-ionic" href="#/tab/juego">
+    <ion-nav-view name="tab-juego"></ion-nav-view>
+  </ion-tab>
+
+  <ion-tab title="VIDEO" icon-off="ion-ionic" icon-on="ion-ionic" href="#/tab-video"></ion-tab>
 
 
 </ion-tabs>
